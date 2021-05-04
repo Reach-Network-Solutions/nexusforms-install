@@ -31,12 +31,12 @@ class Setup:
 
             # clone project
             git_command = [
-                'git', 'clone', 'https://github.com/kobotoolbox/kobo-docker',
+                'git', 'clone', 'https://github.com/Reach-Network-Solutions/nexusforms-docker.git',
                 dict_['kobodocker_path']
             ]
             CLI.run_command(git_command, cwd=os.path.dirname(
                 dict_['kobodocker_path']))
-
+                
             shutil.move(os.path.join(tmp_dirpath, Config.UNIQUE_ID_FILE),
                         os.path.join(dict_['kobodocker_path'],
                                      Config.UNIQUE_ID_FILE))
